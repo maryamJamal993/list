@@ -1,0 +1,22 @@
+<table className="table">
+        <thead>
+          <tr >
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+          </tr>
+        </thead>
+        <tbody>{
+          list.map(
+            (obj) => (
+              <tr key={obj.id}>
+                <th scope="row">{obj.name}</th>
+                <td>{obj.email}</td>
+                <td>{obj.phone}</td>
+              </tr>
+            )
+          )}
+        </tbody>
+      </table>
+
+      {id:0,name:'salma',email:'deel@gmail.com',phone:'0899778876'}
